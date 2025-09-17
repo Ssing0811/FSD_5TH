@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Color Changer</title>
+    <style>
+        #bulb {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+        input[type="button"] {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function fun(value) {
+            console.log("Selected color:", value);
+            const bulb = document.getElementById("bulb");
+            bulb.style.backgroundColor = value;
+        }
+
+        function func() {
+            console.log("bulb is on");
+        }
+
+        console.log("before alert");
+        alert("alert message");
+        console.log("after alert");
+    </script>
+</head>
+<body>
+    <div id="bulb"></div>
+    <input type="button" value="red" onclick="fun(this.value)">
+    <input type="button" value="yellow" onclick="fun(this.value)">
+    <input type="button" value="green" onclick="fun(this.value)">
+    <input type="button" value="orange" onclick="fun(this.value)">
+</body>
+</html>
