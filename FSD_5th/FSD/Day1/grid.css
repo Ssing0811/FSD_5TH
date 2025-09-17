@@ -1,0 +1,33 @@
+#container-box{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+   
+    width: 320px;
+    height: 100px;
+    border: 2px solid burlywood;
+    gap: 2px;
+
+}
+.box{
+    display: flex;
+    border: 1px solid brown;
+}
+/* .box :nth-child(1){
+      
+    display: flex;
+    height: 100px;
+    width: auto;
+
+} */
+.part{
+    border: 1px solid brown;
+    width: 50px;
+    height: fit-content;
+
+}
+.box :nth-child(3),
+.box :nth-child(5),
+.box :nth-child(7){
+
+}
